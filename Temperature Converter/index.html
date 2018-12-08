@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="contain">
+                <header id="title">
+                        <h2>Convert Your Temperature</h2>    
+                    </header>
+                    <main>
+                        <div id="temp-input">
+                            <input type="number" value="30" placeholder="00" id="fah">
+                            <input type="number" placeholder="00" id="cel">
+                        </div>
+                        <div id="button">
+                            <input onclick="toFahren(cel)" type="submit" text="Deg. C" name="submit" title="Submit" id="submit">
+                            <input onclick="toCelcius(fah)" type="submit" text="Deg. F.....sssss" name="reset" title="Reset" id="reset">
+                        </div>
+                        <div id="result-view"></div>
+                    </main>
+                </div>
+                <footer>&#169; Copyright 2018. Designed by Yusuff Ogundeji.</footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

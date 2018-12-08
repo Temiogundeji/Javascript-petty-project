@@ -1,0 +1,49 @@
+body{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, red, purple); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, hsl(0, 100%, 50%), yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, red, purple); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #ff0000,purple); /* Standard syntax */
+    /* background-color: rgb(255, 0, 128); */
+    color:#fff;
+    font-family: Courier New, Courier, monospace;
+}
+#contain{
+    background-color: #fff;
+    border-radius:10px;
+    color:rgb(53, 6, 30);
+    margin:200px auto;
+    padding: 50px;  
+    text-align: center;
+    height:300px;
+    width:700px;
+}
+#title{
+     color:rgb(53, 6, 30);
+     font-size:24px;
+     font-weight:500;
+    }
+input[type="number"]{
+    color:#333;
+    font-size:18px;
+    border:1px solid rgb(53, 6, 30);
+    padding:20px;
+}
+#temp-input{
+    margin-bottom:40px;
+}
+input[type="submit"]{
+    background-color:rgb(53, 6, 30);
+    color:#fff;
+    font-family: Courier New, Courier, monospace;
+    font-size:18px;
+    font-weight:500;
+    border:1px solid rgb(53, 6, 30);
+    padding:20px;
+}
+footer{
+    color:#fff;
+    font-weight:200;
+    margin-top: -160px;
+    text-align:center;
+}

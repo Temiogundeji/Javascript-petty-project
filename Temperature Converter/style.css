@@ -28,11 +28,20 @@ input[type="number"]{
     font-size:18px;
     border:1px solid rgb(53, 6, 30);
     padding:20px;
+    width:50%;
+}
+#output{
+    background-color:rgb(53, 6, 30);
+    color:#fff;
+    padding:20px 40px;
+    font-size:18x;
+    font-weight:500;
+    width:50%;
 }
 #temp-input{
     margin-bottom:40px;
 }
-input[type="submit"]{
+button{
     background-color:rgb(53, 6, 30);
     color:#fff;
     font-family: Courier New, Courier, monospace;

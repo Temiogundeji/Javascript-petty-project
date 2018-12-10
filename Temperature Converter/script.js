@@ -1,25 +1,23 @@
+//°C x 9/5 + 32 = °F. (°F - 32) x 5/9 = °C ...
+document.querySelector('span').innerHTML = "00";
+let temp = document.getElementById("input-temp");
+let tempNum = Number(temp);
+function toCelcius(fahtemp){
+    let celConv  = (fahtemp - 32) * 5/9;
+    document.querySelector('span').innerHTML = celConv;
+    //`{&#8451;}` `{&#8457;}`
 
-    let cel = document.getElementById("cel").value;
-    let fah = document.getElementById("fah").value;
+}
+function toFahren(celtemp){
+    let fahConv = (celtemp * 9/5) + 32;
+    document.querySelector('span').innerHTML = fahConv ;
+}
 
-    let celVal = Number(cel);
-    let fahVal = Number(fah);
-
-    let btnCel = document.getElementById("celci");
-    let btnFah = document.getElementById("fahren");
-
-    function toFahren(celTemp){
-       let fahEquiv = celTemp + 312;
-       fah = fahEquiv;
-    }
-    function toCelcius(fahTemp){
-        let celEquiv = fahTemp -312;
-        cel = celEquiv;
-    }
-
-    // document.getElementById("fahren").addEventListener("click",function(){
-    //     toFahren(cel);
-    // });
-    // document.getElementById("cel").addEventListener("click",function(){
-    //     toelcius(fah);
-    // });
+let btn_cel   = document.getElementById("cel");
+btn_cel.addEventListener("clicked", ()=>{
+    toCelcius(tempNum);
+});
+let btn_fah   = document.getElementById("fah");
+btn_fah.addEventListener("clicked", ()=>{
+    toFahren(tempNum);
+});

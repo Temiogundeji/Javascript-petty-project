@@ -11,14 +11,15 @@
                     </header>
                     <main>
                         <div id="temp-input">
-                            <input type="number" value="30" placeholder="00" id="fah">
-                            <input type="number" placeholder="00" id="cel">
+                            <input type="number" placeholder="00" id="input-temp">
+                            <span id="output"></span>
                         </div>
                         <div id="button">
-                            <input onclick="toFahren(cel)" type="submit" text="Deg. C" name="submit" title="Submit" id="submit">
-                            <input onclick="toCelcius(fah)" type="submit" text="Deg. F.....sssss" name="reset" title="Reset" id="reset">
+                            <!-- <input onclick="toCelcius(cel)" type="submit" id="btn1"  name="cel-btn" value="&#8451;">
+                            <input onclick="toFahren(fah)" type="submit" id="btn2" name="fah-btn" value="	&#8457;"> -->
+                            <button onclick="toCelcius()"  id="cel">&#8451;</button>
+                            <button onclick="toFahren()" id="fah">&#8457;</button>
                         </div>
-                        <div id="result-view"></div>
                     </main>
                 </div>
                 <footer>&#169; Copyright 2018. Designed by Yusuff Ogundeji.</footer>

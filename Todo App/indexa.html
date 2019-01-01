@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Temi Todo</h2>
+        <div id="todo-contain">
+            <ul id="todo-list">
+                <li class="single-todo">Sleep</li>
+            </ul>
+        </div>
+        <input id="todo" type="text" placeholder="What you want to do...">
+        <button>Add Todo</button>
+    </div>
+    <style>
+        html{
+            font-family:Courier New, Courier, monospace;
+            max-height: 100vh;
+        }
+        body{
+            background:linear-gradient(45deg,yellow,red);
+            background-size: contain;
+            background-attachment: fixed;
+            background-repeat:no-repeat;
+            display:flex;
+            flex:1;
+            align-items: center;
+        }
+        #container{
+            background-color:#fff;
+            border-radius:10px;
+            color:orangered;
+            font-weight:700;
+            height:400px;
+            width:500px;
+            margin:50px auto;
+            padding: 50px;
+            text-align:center;
+        }
+        h2{
+            background-color:rgba(204, 185, 146, 0.103);
+            border-radius:2px;
+            padding:5px 7px;
+            margin-bottom:40px;
+            box-shadow:4px 5px rgba(0,0,0,0.05);
+
+        }
+    </style>
+    <script>
+        let  todoContain = document.querySelector('#todo-contain');
+        let btn = document.querySelector('button');
+        let  singleTodo = document.querySelectorAll('.singleTodo');
+        let todoList = document.querySelector('todo-list');
+        let input = document.querySelector('input');
+        let li = document.createElement('li');
+
+        function addTodo(){
+            btn.addEventListener("onclick",()=>{
+                todoList.appendChild(li);
+            })
+        }
+        addTodo();
+        
+
+    </script>
+</body>
+</html>

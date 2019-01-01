@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array practice</title>
+</head>
+<body>
+    <div id="container">
+        <input type="text" placeholder="What you want to do.." id="todo-input">
+        <button onclick="addNew(todo)" id="add-todo">New Todo</button>
+        <div id = "todos"></div>
+    </div>
+    <style></style>
+    <script>
+        // let todos = ["Cat","Hen","Fish","Egg","Milk"];
+        // let todoContain = document.getElementById('todos').innerHTML;
+        // todoContain = todos[1];
+        // console.log(todos.join('<>'));
+        let tasks = ["Sleep","Play","Invest"];
+        let todo = document.querySelector('input');
+        let btnAdd = document.querySelector('button');
+
+        tasks.map(t=>{
+            document.getElementById("todos").innerHTML = tasks;
+        });
+        // todoTemplate  = "<span id='todo'>"+ todo +"</span>";
+        function addNew(todo){
+            tasks.push(todo);
+        }
+        function deleteTodo(todo){
+            todos.splice(todo.findIndex(),1);
+        }
+        btnAdd.addEventListener("click", function(){
+            addNew(todo);
+        });
+
+
+    </script> 
+</body>
+</html>

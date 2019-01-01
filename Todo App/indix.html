@@ -1,0 +1,119 @@
+ <html>
+  <head>
+    <title>Temi Todo App</title>
+   <link href="https://fonts.googleapis.com/css?family=Charm|Lobster" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <header id="title">Temi Todo</header>
+      <div id="todo-box">
+        <input type="text" id="todo-input" placeholder="What you need to do..."></input><br>
+        <button id="add-todo">Add Todo</button>
+      </div>
+      <div id="todo-contain">
+        <ul id="todo-list">
+          <li class="todo-class"to pub</li>
+        </ul>
+      </div>
+    </div>
+  <footer>&#169; Copyright 2018. Designed and Developed by Temiogundeji </footer>
+
+  <style>
+      body{
+  background:linear-gradient(90deg, #ff0000,#0000ff);
+}
+#container{
+  align-items:center;
+  height:700px;
+  width:500px;
+  background-color:#fff;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.055);
+  border-radius:10px;
+  margin:100px auto;
+  padding:25px;
+}
+#title{
+  color:rgb(48, 4, 54);
+  text-align:center;
+  font-family: 'Lobster', cursive;
+  font-size:32px;
+}
+#todo-box{
+  margin-top:50px;
+  text-align:center;
+}
+input{
+  color:rgb(48, 4, 54);
+  font-size:20px;
+  display:box;
+  font-family: 'Lobster', cursive;
+  padding:20px 10px;
+  width:300px;
+  border:0px;
+  box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.055); 
+  border-left:5px solid rgb(48, 4, 54);
+  margin-bottom: 25px;
+}
+#todo-contain{
+  padding:25px;
+  text-align:center;
+}
+#todo-contain ul li{
+  border-radius:5px;
+   border-left:5px solid rgb(48, 4, 54);
+  border-right:5px solid rgb(48, 4, 54);
+  list-style-type:none;
+  color:rgb(48, 4, 54);
+  font-size:20px;
+  display:block;
+  font-family: 'Lobster', cursive;
+   box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.055); 
+  padding:10px;
+  margin-top:15px;
+}
+
+#add-todo{
+  background-color:rgb(48, 4, 54);
+  font-family: 'Lobster', cursive;
+  font-size:18px;
+  color:#fff;
+  box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.055);
+  border:0px;
+  padding: 10px 20px;
+}
+footer{
+  color:#fff;
+  font-size:18px;
+   font-family: 'Lobster', cursive;
+  text-align:center;
+  margin-top:-80px;
+}
+
+  </style>
+  <script>
+
+
+
+const btn_add = document.querySelector('button');
+const todo_list = document.querySelector('ul');
+
+function addTodo(){
+  let todo = document.createElement('li');
+
+  // let allTodos = Array.from(document.querySelectorAll('todo-class'));
+  // allTodos.map(todo => {
+     
+  // });
+  let user_input = document.getElementById('todo-input').value;;
+  let newTodo = document.createTextNode(user_input);
+  todo.appendChild(newTodo);
+  document.getElementById('todo-list').appendChild(todo);
+}
+function removeTodo(todo_id){
+  
+}
+btn_add.addEventListener("click", addTodo);
+
+  </script>
+  </body>
+</html>

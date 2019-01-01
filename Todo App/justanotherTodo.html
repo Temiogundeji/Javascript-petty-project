@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Todo</title>
+    </head>
+    <body>
+        <input type="text" placeholder="your todo here">
+        <button>Add Todo</button>
+        <div id="container">
+            <ul>
+                <li>First</li>
+            </ul>
+        </div>
+        <script>
+            const list = document.querySelector('ul');
+            const button = document.querySelector('button');
+            let li = document.createElement('li');
+            let input = document.querySelector('input').value;
+            let text = document.createTextNode(input);
+
+            function addTodo(){
+                li.appendChild(text);
+                list.appendChild(li);
+            }
+            button.addEventListener("click", addTodo);
+        </script>
+    </body>
+</html>
